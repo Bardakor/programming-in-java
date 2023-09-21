@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lab00.iml" filepath="$PROJECT_DIR$/lab00.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lab00.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lab00.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lab00.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lab00.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.programming-in-java.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.programming-in-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.programming-in-java.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.programming-in-java.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.programming-in-java.test.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.programming-in-java.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/programming-in-java.iml" filepath="$PROJECT_DIR$/.idea/programming-in-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lab00/programming-in-java.lab00.iml" filepath="$PROJECT_DIR$/.idea/modules/lab00/programming-in-java.lab00.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lab01/programming-in-java.lab01.iml" filepath="$PROJECT_DIR$/.idea/modules/lab01/programming-in-java.lab01.iml" />
     </modules>
   </component>
 </project>
