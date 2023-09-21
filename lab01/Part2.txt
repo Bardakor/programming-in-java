@@ -1,0 +1,19 @@
+1. Object Initialization for Object-Derived Class:
+
+Defaults: null for objects, 0 for numbers, false for boolean, '\u0000' for char.
+Statics: Initialized on class load.
+Constructors: Create objects, may have params.
+
+2. D9 Class Diagram:
+[D9] --> [Object]
+
+3. Constructor Sequence:
+Superclass to subclass, Object → D9.
+
+4. Constructors vs. Factory Methods:
+Constructors create, factories return instances.
+
+5. Singleton Pattern Apps:
+
+DB Connection Pooling.
+Logging Control.

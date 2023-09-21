@@ -1,0 +1,16 @@
+1. Encapsulation in Java: Encapsulation is the concept of bundling data and methods within a class and controlling access to the data through access modifiers like private and public, ensuring data security and organization.
+
+2. Mutator Method (Setter): A mutator method is used to modify the internal state (data) of an object. It typically has a void return type and allows you to set the values of private fields within a class.
+
+3. Accessor Method (Getter): An accessor method is used to retrieve the internal state (data) of an object. It typically has a non-void return type and provides controlled access to private fields.
+
+4. 'this' in Java: 'this' refers to the current instance of a class and is used to differentiate between class members and parameters or local variables with the same name.
+
+5. 'super' in Java: 'super' is used to access and call methods or constructors from the parent (superclass) of a class when there is an inheritance relationship.
+
+6. Inheritance in Java: Inheritance is a mechanism in Java where a new class (subclass or child class) can inherit properties and behaviors (fields and methods) from an existing class (superclass or parent class). It promotes code reusability.
+
+7. Polymorphism in Java: Polymorphism is the ability of different classes to be treated as instances of the same class through inheritance and method overriding. The three main forms are method overloading, method overriding, and interface-based polymorphism.
+
+8.Inheritance and Sub-type Polymorphism: Inheritance establishes an "is-a" relationship between the subclass and superclass. Sub-type (or inclusion) polymorphism allows objects of a subclass to be treated as objects of the superclass, promoting flexibility and extensibility in code.
+

@@ -1,0 +1,24 @@
+1. Strategy for Defining Immutable Objects:
+
+Make class final, fields private and final.
+No mutator methods.
+Initialize in constructor.
+Ensure deep immutability.
+
+2. Immutable Object vs. Immutable Class:
+
+Immutable object cannot change; immutable class can have mutable fields.
+
+3. Advantages of Immutable Objects:
+
+Thread-safe.
+Simplifies code.
+Supports caching.
+Predictable behavior.
+Hashable.
+
+4. Uses of Java Records:
+
+Data Transfer Objects (DTOs).
+Value Objects.
+Records simplify data class creation and generate common methods.

@@ -1,0 +1,18 @@
+1. Difference between == and equals:
+
+== compares references (or values for primitives).
+equals compares object content (can be customized).
+
+2.Formula o1.equals(o2) $\implies$ hasCode(o1) == hashCode(o2):
+
+Not always true in practice due to potential hashCode implementation issues.
+
+3. Java Object Class:
+
+Root class for all Java classes.
+Provides basic methods like equals and hashCode.
+
+4.General Contract of hashCode and equals:
+
+Equals: Reflexive, Symmetric, Transitive, Consistent, Handles null.
+HashCode: Consistency, Equals objects have equal hashCodes, Unequals objects may or may not have different hashCodes.
