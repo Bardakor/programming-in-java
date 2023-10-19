@@ -1,0 +1,13 @@
+2. Differences between nested classes:
+
+Inner classes are non-static and have access to the outer class's members.
+Static nested classes are static and do not have access to instance-specific members.
+Local classes are defined within methods or blocks.
+Anonymous classes are unnamed and used for one-time tasks.
+
+3. Using inner classes in other classes:
+
+Yes, inner classes can be used in other classes, but they require an instance of the outer class.
+Modifiers for inner classes:
+
+Yes, inner classes can have access modifiers like public, protected, private, or be declared as static.

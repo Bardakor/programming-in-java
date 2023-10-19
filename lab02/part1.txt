@@ -1,0 +1,27 @@
+1. Immutable Class with Private Fields and No Setters:
+Not necessarily immutable; it depends on whether the class provides methods to modify its state.
+
+2. Immutable Class with Private Primitive Fields and No Setters:
+Likely immutable as long as there are no methods allowing state modification.
+
+3. Why the Class is Not Immutable:
+The class is not immutable because it exposes a public method that returns a reference to a mutable array.
+
+4. Refactoring to One File-One Class:
+Create a separate file named C.java for the class C with its definition in that file.
+
+5. The class is not immutable because it exposes a public method getValues()
+that provides direct access to its mutable array values.
+
+6.
+public class C {
+    private int[] values;
+
+    public int[] getValues() {
+        return values;
+    }
+}
+
+
+
+

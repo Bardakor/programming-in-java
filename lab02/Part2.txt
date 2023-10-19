@@ -1,0 +1,20 @@
+3. The implementation is correct and thread-safe because enums
+in Java are inherently thread-safe. Enum instances are created
+only once during class loading, ensuring a single, shared instance
+(in this case, INSTANCE). This guarantees that multiple threads
+cannot create multiple instances of the singleton, making it thread-safe by design.
+
+4.
+
+public enum EnumBasedSingleton {
+       INSTANCE;
+       private int value;
+
+       public int getValue() {
+           return value;
+       }
+
+       public void setValue(int value) {
+           this.value = value;
+       }
+   }

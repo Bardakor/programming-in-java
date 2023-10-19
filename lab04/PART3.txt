@@ -1,0 +1,21 @@
+The purpose of bounds for type variables in Java is to restrict 
+the allowable types that can be used with generic classes or methods.
+Interface bounds specify that the type variable must implement a
+particular interface, while class bounds specify that the type variable
+ must extend a specific class.
+
+To make the given generic function compile, add an interface bound to 
+the type variable `T` by specifying that `T` must extend an interface 
+(e.g., `Moveable`) with the required method (`goTo(double x, double y)`).
+ Here's the modified function:
+
+
+private static <T extends Moveable> void moveAll(T[] elems, double x, double y) {
+    for (var e : elems) {
+        e.goTo(x, y);
+    }
+}
+
+
+This ensures that only types implementing the `Moveable` interface can 
+be used with the `moveAll` function.

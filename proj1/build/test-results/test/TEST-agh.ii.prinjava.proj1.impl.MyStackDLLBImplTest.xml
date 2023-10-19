@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="agh.ii.prinjava.proj1.impl.MyStackDLLBImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-10-19T17:34:58" hostname="DESKTOP-SDL4P6O" time="0.031">
+  <properties/>
+  <testcase name="testPop()" classname="agh.ii.prinjava.proj1.impl.MyStackDLLBImplTest" time="0.019"/>
+  <testcase name="testPeek()" classname="agh.ii.prinjava.proj1.impl.MyStackDLLBImplTest" time="0.001"/>
+  <testcase name="testPush()" classname="agh.ii.prinjava.proj1.impl.MyStackDLLBImplTest" time="0.002"/>
+  <testcase name="testPopFromEmptyStack()" classname="agh.ii.prinjava.proj1.impl.MyStackDLLBImplTest" time="0.002"/>
+  <testcase name="testNumOfElems()" classname="agh.ii.prinjava.proj1.impl.MyStackDLLBImplTest" time="0.001"/>
+  <testcase name="testPeekFromEmptyStack()" classname="agh.ii.prinjava.proj1.impl.MyStackDLLBImplTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

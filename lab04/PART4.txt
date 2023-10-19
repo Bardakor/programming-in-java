@@ -1,0 +1,47 @@
+Invariance: Generic types are invariant when you cannot substitute a 
+type parameter with its subtype or supertype. In other words, GenBox<T>
+is invariant if GenBox<B> and GenBox<C> are not considered subtypes
+or supertypes of GenBox<A>.
+
+Covariance: Covariance allows substituting a more derived (subtype) 
+generic type for a less derived (supertype) generic type. 
+This typically happens when using wildcard extends.
+
+Contravariance: Contravariance allows substituting a more derived 
+(subtype) generic type for a more generic (supertype) generic type.
+ This typically happens when using wildcard super.
+
+Subtype Wildcard: A wildcard <? extends T> represents an unknown 
+subtype of T. It allows you to read from a collection, but you cannot 
+add elements to it.
+
+Supertype Wildcard: A wildcard <? super T> represents an unknown 
+supertype of T. It allows you to add elements to a collection, but you 
+cannot safely read from it.
+
+Unbounded Wildcard: A wildcard <?> represents an unknown type. 
+It provides limited access, allowing neither reading nor writing 
+to the collection.
+
+Errors:
+
+GenBox<B> gb3 = new GenBox<A>();
+
+Error: Invariance violation. You cannot assign a GenBox<A> to a variable 
+of type GenBox<B>.
+
+gb5.setX(new C());
+
+Error: Type mismatch. The generic type of gb5 is ? extends B, 
+which is not a specific type. You can't set a value to it.
+
+gb9.setX(new C());
+
+Error: Type mismatch. The generic type of gb9 is ? super B, 
+which is not a specific type. You can't set a value of type C to it.
+
+GenBox<?> gb10 = new GenBox<B>();
+
+No error here. This is valid because gb10 is of type GenBox<?>, 
+which is an unbounded wildcard, allowing you to read and write 
+without knowing the exact type.

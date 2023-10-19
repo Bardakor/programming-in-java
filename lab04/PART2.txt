@@ -1,0 +1,98 @@
+1. Benefits of Using Generic Types:
+Generic types in programming languages like Java provide several benefits:
+
+a. Type Safety: Generics enable you to specify the type of data that a data structure or method can work with. This helps catch type-related errors at compile time rather than at runtime, reducing the chance of runtime errors.
+
+b. Code Reusability: Generics allow you to create classes, interfaces, and methods that work with a wide range of data types. This promotes code reuse and reduces the need for duplicating code.
+
+c. Abstraction: Generics provide a way to create more abstract and flexible data structures and algorithms. You can create classes and methods that are not tied to specific data types, making your code more versatile.
+
+d. Improved Readability: Code that uses generics is often more self-explanatory and easier to understand because it explicitly states the types involved.
+
+2. Syntax of Generic Class Declaration:
+
+A generic class declaration in Java follows this syntax:
+
+class ClassName<TypeParameter1, TypeParameter2, ...> {
+    // Class members and methods
+}
+
+For example, a generic class that can hold elements of any type might be declared as:
+
+class Box<T> {
+    private T data;
+    
+    public Box(T data) {
+        this.data = data;
+    }
+    
+    public T getData() {
+        return data;
+    }
+}
+
+
+3. Syntax of Generic Method Declaration:
+
+A generic method declaration in Java follows this syntax:
+
+public <TypeParameter1, TypeParameter2, ...> ReturnType methodName(Parameter1Type parameter1, Parameter2Type parameter2, ...) {
+    // Method implementation
+}
+
+For example, a generic method that swaps two elements in an array might be declared as:
+
+public <T> void swap(T[] array, int index1, int index2) {
+    T temp = array[index1];
+    array[index1] = array[index2];
+    array[index2] = temp;
+}
+
+4. Raw Type :
+
+A raw type in Java is a type that is not parameterized with generic 
+type arguments. It is essentially a generic type without specifying 
+the type parameter. Raw types are considered unsafe because they 
+bypass compile-time type checking, which can lead to runtime errors. 
+Raw types exist in Java for compatibility with legacy code written 
+before generics were introduced.
+
+For example, if you have a generic class GenBox<T>, 
+a raw type would be simply GenBox. Using raw types is 
+discouraged because it can result in ClassCastException 
+and other type-related issues at runtime.
+
+
+5. Compilation Results for GenBox:
+(a) In this section of code, GenBox gb1 = new GenBox(1); is using a 
+raw type, so it accepts any type of value. The subsequent lines 
+gb1.setX("abc"); and gb1.setX(new GenBox(true)); are both allowed 
+because gb1 is a raw type, which effectively loses type safety. 
+This code will compile without errors, but it's not type-safe.
+
+(b) In this section of code, GenBox<Integer> gb2 = new GenBox(1); 
+correctly specifies the type parameter as Integer, so it expects an 
+Integer value. The line gb2.setX("abc"); will result in a compilation 
+error because you're trying to set an Integer generic type to a String. 
+However, gb2.setX(new GenBox(true)); is allowed because gb2 itself
+ is a GenBox<Integer> and can contain any reference type.
+
+(c) To complete the method header, you can create a generic method 
+that accepts an array of any type and prints its elements. Here's 
+the completed code:
+
+public class Main {
+    public static void main(String[] args ) {
+        Integer[] ints = {1, 2, 3};
+        String[] strs = {"A", "B", "C"};
+
+        print(ints);
+        print(strs);
+    }
+
+    public static <T> void print(T[] elems) {
+        for (int i = 0; i < elems.length; i++)
+            System.out.print(elems[i] + " ");
+        System.out.println();
+    }
+}
