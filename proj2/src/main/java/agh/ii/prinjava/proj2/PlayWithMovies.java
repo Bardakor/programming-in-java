@@ -26,7 +26,7 @@ interface PlayWithMovies {
         // Retrieve the list of movies, or an empty list if not present
         return ImdbTop250.movies()
                 // Convert the list to a stream
-                .orElse(new ArrayList<>())
+                .orElse(List.of())
                 .stream()
                 // Filter movies directed by the specified director
                 .filter(movie -> movie.directors().contains(director))
